@@ -2,7 +2,7 @@
 <suite name="sample test suite" >
   <test name="Login Test">
     <classes>
-      <class name="com.mavenselenium.IndividualActivity"/>
+      <class name="com.mavenselenium.AlertDemo"/>
     </classes>
   </test>
 </suite>
