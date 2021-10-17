@@ -2,15 +2,15 @@
   
 <suite name="SampleSuite2" verbose="1" >
   <test name="SampleTest" >
-  <parameter name="browser" value="Chrome"/>
+  <parameter name="browser" value="Firefox"/>
     <classes>
-       <class name="com.mavenselenium.GroupActivity" />
+       <class name="com.mavenselenium.IndividualActivity" />
     </classes>
   </test>
   <test name="Sample2Test" >
-  <parameter name="browser" value="Firefox"/>
+  <parameter name="browser" value="Chrome"/>
     <classes>
-       <class name="com.mavenselenium.GroupActivity" />
+       <class name="com.mavenselenium.IndividualActivity" />
     </classes>
   </test>
 
