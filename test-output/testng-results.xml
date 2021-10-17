@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="SampleSuite2" duration-ms="49727" started-at="2021-10-17T20:18:37 IST" finished-at="2021-10-17T20:19:26 IST">
+  <suite name="SampleSuite2" duration-ms="48170" started-at="2021-10-17T21:45:15 IST" finished-at="2021-10-17T21:46:03 IST">
     <groups>
     </groups>
-    <test name="SampleTest" duration-ms="27839" started-at="2021-10-17T20:18:37 IST" finished-at="2021-10-17T20:19:05 IST">
+    <test name="SampleTest" duration-ms="25992" started-at="2021-10-17T21:45:15 IST" finished-at="2021-10-17T21:45:41 IST">
       <class name="com.mavenselenium.IndividualActivity">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="setup" is-config="true" duration-ms="8946" started-at="2021-10-17T20:18:37 IST" finished-at="2021-10-17T20:18:46 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="setup" is-config="true" duration-ms="8032" started-at="2021-10-17T21:45:15 IST" finished-at="2021-10-17T21:45:23 IST">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="logintest" is-config="true" duration-ms="4793" started-at="2021-10-17T20:18:46 IST" finished-at="2021-10-17T20:18:50 IST">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="logintest" is-config="true" duration-ms="3978" started-at="2021-10-17T21:45:23 IST" finished-at="2021-10-17T21:45:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="Scenariotest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="Scenariotest" duration-ms="11650" started-at="2021-10-17T20:18:50 IST" finished-at="2021-10-17T20:19:02 IST">
+        <test-method status="PASS" signature="Scenariotest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="Scenariotest" duration-ms="11489" started-at="2021-10-17T21:45:27 IST" finished-at="2021-10-17T21:45:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenariotest -->
-        <test-method status="PASS" signature="Screenshot()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="Screenshot" is-config="true" duration-ms="760" started-at="2021-10-17T20:19:02 IST" finished-at="2021-10-17T20:19:03 IST">
+        <test-method status="PASS" signature="Screenshot()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="Screenshot" is-config="true" duration-ms="746" started-at="2021-10-17T21:45:39 IST" finished-at="2021-10-17T21:45:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method status="PASS" signature="logouttest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="logouttest" is-config="true" duration-ms="1590" started-at="2021-10-17T20:19:03 IST" finished-at="2021-10-17T20:19:05 IST">
+        <test-method status="PASS" signature="logouttest()[pri:0, instance:com.mavenselenium.IndividualActivity@44c8afef]" name="logouttest" is-config="true" duration-ms="1552" started-at="2021-10-17T21:45:39 IST" finished-at="2021-10-17T21:45:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logouttest -->
       </class> <!-- com.mavenselenium.IndividualActivity -->
     </test> <!-- SampleTest -->
-    <test name="Sample2Test" duration-ms="21836" started-at="2021-10-17T20:19:05 IST" finished-at="2021-10-17T20:19:26 IST">
+    <test name="Sample2Test" duration-ms="22110" started-at="2021-10-17T21:45:41 IST" finished-at="2021-10-17T21:46:03 IST">
       <class name="com.mavenselenium.IndividualActivity">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="setup" is-config="true" duration-ms="4695" started-at="2021-10-17T20:19:05 IST" finished-at="2021-10-17T20:19:09 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="setup" is-config="true" duration-ms="4994" started-at="2021-10-17T21:45:41 IST" finished-at="2021-10-17T21:45:46 IST">
           <params>
             <param index="0">
               <value>
@@ -49,23 +49,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="logintest" is-config="true" duration-ms="4201" started-at="2021-10-17T20:19:09 IST" finished-at="2021-10-17T20:19:13 IST">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="logintest" is-config="true" duration-ms="4266" started-at="2021-10-17T21:45:46 IST" finished-at="2021-10-17T21:45:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="Scenariotest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="Scenariotest" duration-ms="11332" started-at="2021-10-17T20:19:13 IST" finished-at="2021-10-17T20:19:25 IST">
+        <test-method status="PASS" signature="Scenariotest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="Scenariotest" duration-ms="10904" started-at="2021-10-17T21:45:50 IST" finished-at="2021-10-17T21:46:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenariotest -->
-        <test-method status="PASS" signature="Screenshot()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="Screenshot" is-config="true" duration-ms="340" started-at="2021-10-17T20:19:25 IST" finished-at="2021-10-17T20:19:25 IST">
+        <test-method status="PASS" signature="Screenshot()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="Screenshot" is-config="true" duration-ms="624" started-at="2021-10-17T21:46:01 IST" finished-at="2021-10-17T21:46:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method status="PASS" signature="logouttest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="logouttest" is-config="true" duration-ms="1262" started-at="2021-10-17T20:19:25 IST" finished-at="2021-10-17T20:19:26 IST">
+        <test-method status="PASS" signature="logouttest()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="logouttest" is-config="true" duration-ms="1317" started-at="2021-10-17T21:46:02 IST" finished-at="2021-10-17T21:46:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logouttest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="tearDown" is-config="true" duration-ms="2777" started-at="2021-10-17T20:19:26 IST" finished-at="2021-10-17T20:19:29 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mavenselenium.IndividualActivity@7a30d1e6]" name="tearDown" is-config="true" duration-ms="1934" started-at="2021-10-17T21:46:03 IST" finished-at="2021-10-17T21:46:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

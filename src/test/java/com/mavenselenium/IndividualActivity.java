@@ -2,6 +2,7 @@ package com.mavenselenium;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -87,8 +88,9 @@ public class IndividualActivity {
 	
 	@AfterMethod
 	public void Screenshot() throws IOException {
+		SimpleDateFormat time=new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
 		 File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 FileUtils.copyFile(src, new File("C:\\Users\\sainiranjanb\\Downloads\\cucumber\\screenshots\\task.png"));
+		 FileUtils.copyFile(src, new File("C:\\Users\\sainiranjanb\\Downloads\\cucumber\\screenshots\\screenshot"+time+".png"));
 		 }
 	
 	@AfterTest
