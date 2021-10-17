@@ -1,14 +1,20 @@
 package com.mavenselenium;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -77,17 +83,22 @@ public class IndividualActivity {
 			driver.findElement(By.name("finish")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//button[@id='back-to-products']")).click();
-			Thread.sleep(1000);
 	}
 	
 	@AfterMethod
+	public void Screenshot() throws IOException {
+		 File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(src, new File("C:\\Users\\sainiranjanb\\Downloads\\cucumber\\screenshots\\task.png"));
+		 }
+	
+	@AfterTest
 		public void logouttest() throws InterruptedException {
 			driver.findElement(By.id("react-burger-menu-btn")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("logout_sidebar_link")).click();
 			}
 			
-	@AfterTest
+	@AfterSuite
 		public void tearDown()
 			{
 				driver.quit();				
