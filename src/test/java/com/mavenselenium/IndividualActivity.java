@@ -3,6 +3,7 @@ package com.mavenselenium;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -14,8 +15,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -88,19 +89,23 @@ public class IndividualActivity {
 	
 	@AfterMethod
 	public void Screenshot() throws IOException {
-		SimpleDateFormat time=new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
-		 File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 FileUtils.copyFile(src, new File("C:\\Users\\sainiranjanb\\Downloads\\cucumber\\screenshots\\screenshot"+time+".png"));
+		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(src, new File("C:\\Users\\sainiranjanb\\Downloads\\cucumber\\screenshots\\screenshot"+timestamp()+".png"));
 		 }
+	public static String timestamp() {
+	return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+	}
+
+
 	
-	@AfterTest
+	@AfterClass
 		public void logouttest() throws InterruptedException {
 			driver.findElement(By.id("react-burger-menu-btn")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("logout_sidebar_link")).click();
 			}
 			
-	@AfterSuite
+	@AfterTest
 		public void tearDown()
 			{
 				driver.quit();				
